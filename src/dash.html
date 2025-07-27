@@ -6,62 +6,77 @@
   <title>UN-Dashboard</title>
   <link href="./output.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-gray-100 text-gray-800 font-sans">
 
- 
-  <header>
-    <h1>UN-Dashboard</h1>
+  <!-- Header -->
+  <header class="bg-blue-300 text-white p-4 shadow-md">
+    <h1 class="text-2xl font-bold">UN Dashboard</h1>
   </header>
 
-  <div>
+  <div class="flex min-h-screen">
 
-   
-    <nav>
-      <ul>
-        <li><a href="#">main</a></li>
-        <li><a href="#">Projects </a></li>
-        <li><a href="#">HR</a></li>
-        <li><a href="#">Budget and Finance</a></li>
-        <li><a href="#">Partnerships</a></li>
-        <li><a href="#">Posts</a></li>
-        <li><a href="#"> Reports</a></li>
-        <li><a href="#">Users </a></li>
-        <li><a href="#">Setting</a></li>
+    <!-- Sidebar -->
+    <nav class="w-64 bg-white border-r shadow-sm">
+      <ul class="space-y-2 p-6">
+        <li><a href="#" class="block py-2 px-4 hover:bg-blue-100 rounded">Main</a></li>
+        <li><a href="#" class="block py-2 px-4 hover:bg-blue-100 rounded">Projects</a></li>
+        <li><a href="#" class="block py-2 px-4 hover:bg-blue-100 rounded">HR</a></li>
+        <li><a href="#" class="block py-2 px-4 hover:bg-blue-100 rounded">Budget and Finance</a></li>
+        <li><a href="#" class="block py-2 px-4 hover:bg-blue-100 rounded">Partnerships</a></li>
+        <li><a href="#" class="block py-2 px-4 hover:bg-blue-100 rounded">Posts</a></li>
+        <li><a href="#" class="block py-2 px-4 hover:bg-blue-100 rounded">Reports</a></li>
+        <li><a href="#" class="block py-2 px-4 hover:bg-blue-100 rounded">Users</a></li>
+        <li><a href="#" class="block py-2 px-4 hover:bg-blue-100 rounded">Setting</a></li>
       </ul>
     </nav>
 
-  
-    <main>
-      <section>
-        <h2>Summary</h2>
-        <div>
-          <p>Projects: 5000</p>
-          <p>spend Budget: 19000000000 $</p>
-          <p>active Employees: 200</p>
-          <p>posts: 6400</p>
+    <!-- Main Content -->
+    <main class="flex-1 p-6 space-y-6">
+      <!-- Summary Section -->
+      <section class="bg-white p-6 rounded shadow">
+        <h2 class="text-xl font-semibold mb-4">Summary</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div class="bg-blue-100 p-4 rounded text-center">
+            <p class="font-bold text-lg">5000</p>
+            <p>Projects</p>
+          </div>
+          <div class="bg-green-100 p-4 rounded text-center">
+            <p class="font-bold text-lg">$19B</p>
+            <p>Spend Budget</p>
+          </div>
+          <div class="bg-yellow-100 p-4 rounded text-center">
+            <p class="font-bold text-lg">200</p>
+            <p>Active Employees</p>
+          </div>
+          <div class="bg-purple-100 p-4 rounded text-center">
+            <p class="font-bold text-lg">6400</p>
+            <p>Posts</p>
+          </div>
         </div>
       </section>
 
-      <section>
-        <h2>projects map</h2>
-        <div>
-          <p>map interactive will display here</p>
+      <!-- Map Section -->
+      <section class="bg-white p-6 rounded shadow">
+        <h2 class="text-xl font-semibold mb-4">Projects Map</h2>
+        <div class="bg-gray-200 h-64 flex items-center justify-center rounded">
+          <p class="text-gray-600">Interactive map will display here</p>
         </div>
       </section>
 
-      <section>
-        <h2>Last Reports</h2>
-        <ul>
-          <li><a href="#">Afriqa Reports 2025</a></li>
-          <li><a href="#">Budget Reports 2025</a></li>
-          <li><a href="#">self proplems in the middle east 2025</a></li>
+      <!-- Reports Section -->
+      <section class="bg-white p-6 rounded shadow">
+        <h2 class="text-xl font-semibold mb-4">Last Reports</h2>
+        <ul class="list-disc list-inside space-y-2">
+          <li><a href="#" class="text-blue-600 hover:underline">Africa Reports 2025</a></li>
+          <li><a href="#" class="text-blue-600 hover:underline">Budget Reports 2025</a></li>
+          <li><a href="#" class="text-blue-600 hover:underline">Self Problems in the Middle East 2025</a></li>
         </ul>
       </section>
     </main>
-
   </div>
 
-  <footer>
+  <!-- Footer -->
+  <footer class="bg-gray-600 text-white text-center py-4">
     &copy; UN 2025
   </footer>
 
